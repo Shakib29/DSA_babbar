@@ -28,9 +28,9 @@ class info{
 };
 
 info solve(node *root,int &ans){
-if(root==NULL){
-  return {INT32_MAX,INT32_MIN,true,0};
-}
+ if (root == NULL) {
+        return {INT16_MAX, INT16_MIN, true, 0};  // Correct initialization for NULL nodes
+    }
 info left=solve(root->left,ans);
 info right=solve(root->right,ans);
 info currnode;
