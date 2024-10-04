@@ -16,7 +16,7 @@ if(nbr==parent){
   dfs(nbr,node,disc,low,vis,adj,ap,timer);
   low[node]=min(low[node],low[nbr]);
   //check for arbitary
-  if(low[node]>=disc[node]&& parent!=-1){
+  if(low[nbr]>=disc[node]&& parent!=-1){
     ap[node]=true;
   }
   child++;
